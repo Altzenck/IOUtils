@@ -45,7 +45,7 @@ public final class IOUtils {
 			 } catch (IOException e) {}
 	}
 	
-	public InputStream readerToInputStream(Reader reader, int bufferSize) {
+	public static InputStream readerToInputStream(Reader reader, int bufferSize) {
 		char[] buffer = new char[bufferSize];
 		 int i = 0;
 		 StringBuilder sb = new StringBuilder();
